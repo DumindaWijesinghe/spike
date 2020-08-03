@@ -1,0 +1,103 @@
+@import '~antd/dist/antd.css';
+
+body {
+  background: #eaecee;
+}
+
+.app-container {
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 40px;
+  .nav-logo {
+    padding: 20px 30px;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+}
+
+.text-input {
+  padding: 10px;
+  background: #fff;
+  border-radius: 10px;
+  width: 700px;
+  margin-bottom: 40px;
+  box-shadow: 0px 0px 20px 0px #e0e0e0;
+  overflow: hidden;
+  
+  p {
+    margin: 0;
+    font-size: 12px;
+    color: #2F80ED;
+    margin-top: 6px;
+  }
+}
+
+.demo {
+  width: 700px;
+  height: auto;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 0px 20px 0px #e0e0e0;
+
+  &__chart {
+    background: #2F80ED;
+    height: 200px;
+    width: 100%;
+    padding-right: 10px;
+  }
+  
+  &__controls {
+    display: flex;
+  }
+
+  &__textarea {
+    flex-grow: 1;
+    position: relative;
+    padding: 10px;
+  }
+
+  &__sliders {
+    padding: 10px;
+    // padding-bottom: 30px;
+    display: flex;
+    width: 100%;
+
+    .demo__slider {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      .demo__title {
+        font-weight: 800;
+        font-size: 20px;
+      }
+      p {
+        font-size: 13px;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &__button {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    background: #2F80ED;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
